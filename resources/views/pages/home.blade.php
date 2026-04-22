@@ -1,6 +1,8 @@
 @php($profile = config('profile'))
 @extends('layouts.app')
 @section('title', 'Accueil')
+@section('lang_fr', route('home'))
+@section('lang_en', route('home.en'))
 
 @section('content')
     <section class="card hero">

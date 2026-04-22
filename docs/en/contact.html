@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,25 +11,25 @@
 <body class="site">
 <header class="header">
     <div class="container header-inner">
-        <a href="http://127.0.0.1:8000" class="brand">
+        <a href="http://127.0.0.1:8000/en" class="brand">
             Rizlene Berrag<span>.</span>
         </a>
 
         <nav class="nav">
-            <a href="http://127.0.0.1:8000/projects">Projets</a>
-            <a href="http://127.0.0.1:8000/cv">CV</a>
-            <a href="http://127.0.0.1:8000/motivation">Motivation</a>
-            <a href="http://127.0.0.1:8000/contact">Contact</a>
+            <a href="http://127.0.0.1:8000/en/projects">Projects</a>
+            <a href="http://127.0.0.1:8000/en/cv">Resume</a>
+            <a href="http://127.0.0.1:8000/en/motivation">Cover Letter</a>
+            <a href="http://127.0.0.1:8000/en/contact">Contact</a>
         </nav>
 
         <div class="head-actions">
-            <a class="btn" href="http://127.0.0.1:8000/download/cv">CV PDF</a>
-            <a class="cta" href="http://127.0.0.1:8000/contact">Me contacter</a>
+            <a class="btn" href="http://127.0.0.1:8000/download/cv">Resume PDF</a>
+            <a class="cta" href="http://127.0.0.1:8000/en/contact">Contact me</a>
         </div>
 
         <div class="lang-switch">
-            <a href="http://127.0.0.1:8000/contact" class="lang-btn active">FR</a>
-            <a href="http://127.0.0.1:8000/en/contact" class="lang-btn">EN</a>
+            <a href="http://127.0.0.1:8000/contact" class="lang-btn">FR</a>
+            <a href="http://127.0.0.1:8000/en/contact" class="lang-btn active">EN</a>
         </div>
     </div>
 </header>
@@ -43,38 +43,38 @@
 
         <div class="grid2">
             <div class="card pad">
-                <h3 class="h3">Coordonnées</h3>
+                <h3 class="h3">Contact details</h3>
                 <ul class="list">
-                    <li><b>Email :</b> <a href="mailto:Berragrizlene1977@gmail.com">Berragrizlene1977@gmail.com</a></li>
-                    <li><b>LinkedIn :</b> <a href="https://www.linkedin.com/in/rizlene-berrag/" target="_blank" rel="noopener">https://www.linkedin.com/in/rizlene-berrag/</a></li>
-                    <li><b>GitHub :</b> <a href="https://github.com/RizleneBERRAG" target="_blank" rel="noopener">https://github.com/RizleneBERRAG</a></li>
+                    <li><b>Email:</b> <a href="mailto:Berragrizlene1977@gmail.com">Berragrizlene1977@gmail.com</a></li>
+                    <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/rizlene-berrag/" target="_blank" rel="noopener">https://www.linkedin.com/in/rizlene-berrag/</a></li>
+                    <li><b>GitHub:</b> <a href="https://github.com/RizleneBERRAG" target="_blank" rel="noopener">https://github.com/RizleneBERRAG</a></li>
                 </ul>
 
                 <div class="actions" style="margin-top:14px;">
-                    <a class="btn" href="http://127.0.0.1:8000/download/cv">Télécharger le CV</a>
+                    <a class="btn" href="http://127.0.0.1:8000/download/cv">Download resume</a>
                 </div>
             </div>
 
             <div class="card pad">
-                <h3 class="h3">Envoyer un message</h3>
+                <h3 class="h3">Send a message</h3>
 
                 <form class="form" action="#" method="post" onsubmit="return fakeSubmit(event)">
                     <label>
-                        <span>Nom</span>
-                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your name" required>
                     </label>
 
                     <label>
                         <span>Email</span>
-                        <input type="email" name="email" placeholder="email@domaine.com" required>
+                        <input type="email" name="email" placeholder="email@domain.com" required>
                     </label>
 
                     <label>
                         <span>Message</span>
-                        <textarea name="message" rows="5" placeholder="Bonjour, ..." required></textarea>
+                        <textarea name="message" rows="5" placeholder="Hello, ..." required></textarea>
                     </label>
 
-                    <button class="btn primary" type="submit">Envoyer</button>
+                    <button class="btn primary" type="submit">Send</button>
                     <p id="formStatus" class="muted" style="margin:10px 0 0;"></p>
                 </form>
             </div>

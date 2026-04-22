@@ -1,34 +1,34 @@
-@extends('layouts.app')
-@section('title', 'CV')
+@extends('layouts.app-en')
+@section('title', 'Resume')
 @section('lang_fr', route('cv'))
 @section('lang_en', route('cv.en'))
 
 @section('content')
     <section class="section">
         <div class="section-head">
-            <h1 class="h2">CV</h1>
-            <p class="muted">En version web + Dispo au format PDF.</p>
+            <h1 class="h2">Resume</h1>
+            <p class="muted">Available as a web version + PDF format.</p>
         </div>
 
         {{-- HERO --}}
         <div class="card pad hero">
             <div class="hero-grid">
                 <div>
-                    <div class="kicker">Développeuse informatique • Full Stack orientée Laravel</div>
+                    <div class="kicker">Software Developer • Full Stack with a Laravel focus</div>
                     <h2 class="h1" style="font-size:36px; margin-top:10px;">
                         Rizlene <span class="accent">Berrag</span>
                     </h2>
 
                     <p class="p">
-                        Je construis des applications web fiables et maintenables avec une logique entreprise :
-                        <b>qualité</b>, <b>sécurité</b>, <b>performance</b> et <b>résultats</b>.
+                        I build reliable and maintainable web applications with a professional mindset:
+                        <b>quality</b>, <b>security</b>, <b>performance</b>, and <b>results</b>.
                     </p>
 
                     <div class="actions">
                         <a class="btn primary" href="{{ asset('assets/cv.pdf') }}" target="_blank" rel="noopener">
-                            Télécharger le CV (PDF)
+                            Download Resume (PDF)
                         </a>
-                        <a class="btn" href="{{ route('contact') }}">Me contacter</a>
+                        <a class="btn" href="{{ route('contact.en') }}">Contact Me</a>
                     </div>
 
                     <div class="tags">
@@ -38,12 +38,12 @@
                         <span class="tag">MySQL</span>
                         <span class="tag">HTML/CSS/JS</span>
                         <span class="tag">Agile</span>
-                        <span class="tag">Autonomie</span>
+                        <span class="tag">Autonomy</span>
                     </div>
                 </div>
 
                 <div class="panel">
-                    <h3 class="h3">Coordonnées</h3>
+                    <h3 class="h3">Contact details</h3>
                     <ul class="steps" style="margin-top:12px;">
                         <li><b>📍</b> 69780 Mions • 69500 Bron</li>
                         <li>
@@ -69,17 +69,17 @@
                     </ul>
 
                     <div class="notice" style="margin-top:12px;">
-                        <b>Permis B</b> • Véhiculée
+                        <b>Driving license B</b> • Own vehicle
                     </div>
                 </div>
             </div>
         </div>
 
-        {{-- GRID: Compétences / Points forts --}}
+        {{-- GRID: Skills / Strengths --}}
         <div class="grid2 section" style="margin-top:18px;">
             <div class="card pad">
-                <h3 class="h3">Compétences</h3>
-                <p class="p">Stack et outils que j’utilise au quotidien.</p>
+                <h3 class="h3">Skills</h3>
+                <p class="p">Technologies and tools I use on a daily basis.</p>
 
                 <div class="tags">
                     <span class="tag">HTML</span>
@@ -94,35 +94,34 @@
                 </div>
 
                 <ul class="list" style="margin-top:14px;">
-                    <li><b>Méthodes :</b> Agile, autonomie & travail en équipe.</li>
-                    <li><b>Outils :</b> Word, Excel, PowerPoint, Photoshop.</li>
-                    <li><b>Virtualisation :</b> VMWare, ISPConfig.</li>
+                    <li><b>Methods:</b> Agile, autonomy, and teamwork.</li>
+                    <li><b>Tools:</b> Word, Excel, PowerPoint, Photoshop.</li>
+                    <li><b>Virtualization:</b> VMWare, ISPConfig.</li>
                 </ul>
             </div>
 
             <div class="card pad">
-                <h3 class="h3">Points forts (recruteur IT)</h3>
+                <h3 class="h3">Key strengths (for IT recruiters)</h3>
                 <ul class="steps">
-                    <li><b>1.</b> Code structuré (MVC, séparation des responsabilités)</li>
-                    <li><b>2.</b> Qualité : lisibilité, validation, logs/erreurs</li>
-                    <li><b>3.</b> Données : SQL/MySQL, cohérence, performance</li>
-                    <li><b>4.</b> Déploiement : environnements, organisation, prod</li>
-                    <li><b>5.</b> Communication : capacité à expliquer clairement</li>
+                    <li><b>1.</b> Structured code (MVC, separation of concerns)</li>
+                    <li><b>2.</b> Quality mindset: readability, validation, logs/errors</li>
+                    <li><b>3.</b> Data: SQL/MySQL, consistency, performance</li>
+                    <li><b>4.</b> Delivery: environments, organization, production</li>
+                    <li><b>5.</b> Communication: ability to explain clearly</li>
                 </ul>
 
                 <div class="notice" style="margin-top:12px;">
-                    <b>Astuce :</b> Ce qui démarque en grande entreprise IT :
-                    structurer et expliquer clairement ses décisions techniques.
+                    <b>Tip:</b> What makes a difference in a large IT company is the ability
+                    to structure and clearly explain technical decisions.
                 </div>
             </div>
         </div>
-
 
         {{-- TECH HIGHLIGHTS --}}
         <div class="section">
             <div class="section-head">
                 <h2 class="h2" style="font-size:26px;">Tech Highlights</h2>
-                <p class="muted">Ce que je fais concrètement en entreprise :</p>
+                <p class="muted">What I do concretely in a professional environment.</p>
             </div>
 
             <div class="grid3">
@@ -131,15 +130,15 @@
                         <span class="pill pill-live">Architecture</span>
                         <span class="badge badge-strong">MVC</span>
                     </div>
-                    <h3 class="h3" style="margin-top:10px;">Structure propre & scalable</h3>
+                    <h3 class="h3" style="margin-top:10px;">Clean & scalable structure</h3>
                     <p class="p">
-                        Séparation des responsabilités, conventions claires, composants réutilisables,
-                        code lisible pour l’équipe.
+                        Separation of concerns, clear conventions, reusable components,
+                        and readable code for the team.
                     </p>
                     <ul class="list">
-                        <li>Controllers minces, logique dans services</li>
-                        <li>Validation + messages d’erreurs propres</li>
-                        <li>Composants Blade réutilisables</li>
+                        <li>Thin controllers, logic handled in services</li>
+                        <li>Validation + clear error messages</li>
+                        <li>Reusable Blade components</li>
                     </ul>
                 </div>
 
@@ -148,14 +147,14 @@
                         <span class="pill pill-note">Data</span>
                         <span class="badge badge-strong">SQL</span>
                     </div>
-                    <h3 class="h3" style="margin-top:10px;">Données fiables & cohérentes</h3>
+                    <h3 class="h3" style="margin-top:10px;">Reliable & consistent data</h3>
                     <p class="p">
-                        Modélisation simple, requêtes propres, logique métier claire et contrôles de cohérence.
+                        Simple modeling, clean queries, clear business logic, and consistency checks.
                     </p>
                     <ul class="list">
-                        <li>MySQL, relations, contraintes</li>
-                        <li>Optimisation requêtes (index / tri)</li>
-                        <li>Structuration “métier” avant UI</li>
+                        <li>MySQL, relations, constraints</li>
+                        <li>Query optimization (indexes / sorting)</li>
+                        <li>Business-first structuring before UI</li>
                     </ul>
                 </div>
 
@@ -164,35 +163,35 @@
                         <span class="pill pill-date">Delivery</span>
                         <span class="badge badge-strong">CI/CD</span>
                     </div>
-                    <h3 class="h3" style="margin-top:10px;">Livraison & qualité</h3>
+                    <h3 class="h3" style="margin-top:10px;">Delivery & quality</h3>
                     <p class="p">
-                        Environnements maîtrisés, qualité de code, et itérations rapides orientées résultats.
+                        Controlled environments, code quality, and fast iterations focused on results.
                     </p>
                     <ul class="list">
-                        <li>Git propre (branches / commits)</li>
-                        <li>Docker / environnements</li>
-                        <li>Logs, gestion d’erreurs, tests manuels</li>
+                        <li>Clean Git workflow (branches / commits)</li>
+                        <li>Docker / environments</li>
+                        <li>Logs, error handling, manual testing</li>
                     </ul>
                 </div>
             </div>
 
             <div class="card pad inner" style="margin-top:14px;">
                 <div class="row-between">
-                    <b>Ce que ça apporte à une équipe</b>
+                    <b>What this brings to a team</b>
                     <span class="pill pill-live">Impact</span>
                 </div>
                 <p class="p" style="margin-top:10px;">
-                    Moins de bugs, meilleure lisibilité, onboarding plus rapide et évolutions plus simples.
-                    Je documente les choix techniques et je garde une logique “produit”.
+                    Fewer bugs, better readability, faster onboarding, and easier evolutions.
+                    I document technical decisions and keep a product-oriented mindset.
                 </p>
             </div>
         </div>
 
-        {{-- EXPÉRIENCES --}}
+        {{-- EXPERIENCE --}}
         <div class="section">
             <div class="section-head">
-                <h2 class="h2" style="font-size:26px;">Expériences</h2>
-                <p class="muted">Missions et responsabilités (orienté résultat).</p>
+                <h2 class="h2" style="font-size:26px;">Experience</h2>
+                <p class="muted">Responsibilities and contributions with a results-oriented mindset.</p>
             </div>
 
             <div class="card pad inner">
@@ -201,12 +200,12 @@
                     <div class="roadmap-item">
                         <div class="card pad inner">
                             <div class="row-between">
-                                <b>Alternance — Infiny Environnement</b>
+                                <b>Work-study — Infiny Environnement</b>
                                 <span class="pill pill-live">2024–2026</span>
                             </div>
                             <p class="p">
-                                Développement web (front/back), projets concrets, intégration, base de données,
-                                frameworks modernes, logique produit.
+                                Web development (front-end/back-end), real-world projects, integration, databases,
+                                modern frameworks, and product thinking.
                             </p>
                         </div>
                     </div>
@@ -214,13 +213,13 @@
                     <div class="roadmap-item">
                         <div class="card pad inner">
                             <div class="row-between">
-                                <b>Création & gestion site club de boxe — Local.fr</b>
-                                <span class="pill pill-note">Depuis 07/2023</span>
+                                <b>Creation & management of a boxing club website — Local.fr</b>
+                                <span class="pill pill-note">Since 07/2023</span>
                             </div>
                             <ul class="list">
-                                <li>Mise à jour régulière du contenu</li>
-                                <li>Paramètres SEO</li>
-                                <li>Suivi statistiques & ajustements</li>
+                                <li>Regular content updates</li>
+                                <li>SEO settings</li>
+                                <li>Analytics tracking & adjustments</li>
                             </ul>
                         </div>
                     </div>
@@ -228,13 +227,13 @@
                     <div class="roadmap-item">
                         <div class="card pad inner">
                             <div class="row-between">
-                                <b>Développeuse — Meroje & Co</b>
+                                <b>Developer — Meroje & Co</b>
                                 <span class="pill pill-note">2023 & 2024</span>
                             </div>
                             <ul class="list">
-                                <li>Page de réservation WordPress + formulaire intuitif</li>
-                                <li>Optimisation performances (GTmetrix, Analyzer)</li>
-                                <li>Développement HTML / PHP / JS / CSS / Laravel</li>
+                                <li>WordPress booking page + intuitive booking form</li>
+                                <li>Performance optimization (GTmetrix, Analyzer)</li>
+                                <li>Development in HTML / PHP / JS / CSS / Laravel</li>
                             </ul>
                         </div>
                     </div>
@@ -242,20 +241,20 @@
                     <div class="roadmap-item">
                         <div class="card pad inner">
                             <div class="row-between">
-                                <b>Employée de rayon — Leclerc Culturel (Chaponnay)</b>
+                                <b>Sales assistant — Leclerc Culturel (Chaponnay)</b>
                                 <span class="pill pill-note">06–08/2023</span>
                             </div>
-                            <p class="p">Rigueur, sens du service, organisation.</p>
+                            <p class="p">Discipline, customer service, and organization.</p>
                         </div>
                     </div>
 
                     <div class="roadmap-item">
                         <div class="card pad inner">
                             <div class="row-between">
-                                <b>Poste en boulangerie — Mions</b>
-                                <span class="pill pill-note">Depuis 06/2024</span>
+                                <b>Bakery position — Mions</b>
+                                <span class="pill pill-note">Since 06/2024</span>
                             </div>
-                            <p class="p">Discipline, rapidité d’exécution, sens des priorités.</p>
+                            <p class="p">Discipline, speed of execution, and prioritization.</p>
                         </div>
                     </div>
 
@@ -263,63 +262,63 @@
             </div>
         </div>
 
-        {{-- FORMATIONS + SOFT SKILLS --}}
+        {{-- EDUCATION + SOFT SKILLS --}}
         <div class="grid2 section">
             <div class="card pad">
-                <h3 class="h3">Formations</h3>
+                <h3 class="h3">Education</h3>
                 <ul class="list">
-                    <li><b>Master Dev / IA / Data — IPSSI</b> (2025–2026)</li>
-                    <li><b>Bachelor 3 Dev — Doranco</b> (2024–2025)</li>
+                    <li><b>Master in Development / AI / Data — IPSSI</b> (2025–2026)</li>
+                    <li><b>Bachelor 3 in Development — Doranco</b> (2024–2025)</li>
                     <li><b>BTS SIO SLAM — La Martinière Duchère</b> (2023–2024)</li>
                     <li><b>BTS SIO — La Martinière Duchère</b> (2022–2023)</li>
-                    <li><b>Bac STMG — Lycée Condorcet</b> (2021–2022)</li>
+                    <li><b>STMG High School Diploma — Lycée Condorcet</b> (2021–2022)</li>
                 </ul>
             </div>
 
             <div class="card pad">
                 <h3 class="h3">Soft skills</h3>
                 <ul class="steps">
-                    <li><b>Capacité d’apprentissage rapide</b></li>
-                    <li><b>Autonomie</b></li>
-                    <li><b>Créativité</b> : solutions innovantes aux problèmes techniques</li>
-                    <li><b>Esprit d’équipe</b></li>
-                    <li><b>Sensibilité aux besoins utilisateurs</b></li>
+                    <li><b>Fast learning ability</b></li>
+                    <li><b>Autonomy</b></li>
+                    <li><b>Creativity</b>: innovative solutions to technical problems</li>
+                    <li><b>Team spirit</b></li>
+                    <li><b>User-oriented thinking</b></li>
                 </ul>
             </div>
         </div>
 
-        {{-- LANGUES + INTÉRÊTS --}}
+        {{-- LANGUAGES + INTERESTS --}}
         <div class="grid2 section">
             <div class="card pad">
-                <h3 class="h3">Langues</h3>
+                <h3 class="h3">Languages</h3>
                 <ul class="list">
-                    <li>Anglais</li>
-                    <li>Espagnol</li>
+                    <li>English</li>
+                    <li>Spanish</li>
                 </ul>
             </div>
 
             <div class="card pad">
-                <h3 class="h3">Centres d’intérêt</h3>
+                <h3 class="h3">Interests</h3>
                 <ul class="list">
-                    <li><b>Boxe anglaise (compétition)</b> : excellente condition physique</li>
-                    <li><b>Culture japonaise</b> : mangas, animés, manhwa</li>
-                    <li><b>Technologie & informatique</b> : curiosité active</li>
-                    <li><b>Jeux de stratégie</b> (échecs) : implication passionnée</li>
+                    <li><b>English boxing (competition)</b>: excellent physical condition</li>
+                    <li><b>Japanese culture</b>: manga, anime, manhwa</li>
+                    <li><b>Technology & IT</b>: active curiosity</li>
+                    <li><b>Strategy games</b> (chess): strong engagement</li>
                 </ul>
             </div>
         </div>
 
-        {{-- CTA bas --}}
+        {{-- CTA --}}
         <div class="card pad inner" style="margin-top:18px;">
             <div class="row-between">
                 <div>
-                    <h3 class="h3">Accès rapide</h3>
-                    <p class="p">CV PDF, lettre, et contact : tout est accessible immédiatement.</p>
+                    <h3 class="h3">Quick access</h3>
+                    <p class="p">Resume PDF, motivation, and contact — everything is accessible instantly.</p>
                 </div>
                 <div class="actions" style="margin-top:0;">
-                    <a class="btn" href="{{ asset('assets/cv.pdf') }}" target="_blank" rel="noopener">CV PDF</a>
-                    <a class="btn primary" href="{{ route('motivation') }}">Mes motivations</a>
-                    <a class="btn primary" href="{{ route('contact') }}">Me contacter</a>
+                    <a class="btn" href="{{ asset('assets/cv.pdf') }}" target="_blank" rel="noopener">Resume PDF</a>
+                    <a class="btn primary" href="{{ route('motivation') }}">My motivation</a>
+                    <a class="btn primary" href="{{ route('contact.en') }}">Contact me</a>
                 </div>
             </div>
         </div>

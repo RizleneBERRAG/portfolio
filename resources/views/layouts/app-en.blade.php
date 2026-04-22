@@ -1,6 +1,6 @@
 @php($profile = config('profile'))
     <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,25 +12,25 @@
 <body class="site">
 <header class="header">
     <div class="container header-inner">
-        <a href="{{ route('home') }}" class="brand">
+        <a href="{{ route('home.en') }}" class="brand">
             {{ $profile['name'] }}<span>.</span>
         </a>
 
         <nav class="nav">
-            <a href="{{ route('projects.index') }}">Projets</a>
-            <a href="{{ route('cv') }}">CV</a>
-            <a href="{{ route('motivation') }}">Motivation</a>
-            <a href="{{ route('contact') }}">Contact</a>
+            <a href="{{ route('projects.en.index') }}">Projects</a>
+            <a href="{{ route('cv.en') }}">Resume</a>
+            <a href="{{ route('motivation.en') }}">Cover Letter</a>
+            <a href="{{ route('contact.en') }}">Contact</a>
         </nav>
 
         <div class="head-actions">
-            <a class="btn" href="{{ route('download.cv') }}">CV PDF</a>
-            <a class="cta" href="{{ route('contact') }}">Me contacter</a>
+            <a class="btn" href="{{ route('download.cv') }}">Resume PDF</a>
+            <a class="cta" href="{{ route('contact.en') }}">Contact me</a>
         </div>
 
         <div class="lang-switch">
-            <a href="@yield('lang_fr', route('home'))" class="lang-btn active">FR</a>
-            <a href="@yield('lang_en', route('home.en'))" class="lang-btn">EN</a>
+            <a href="@yield('lang_fr', route('home'))" class="lang-btn">FR</a>
+            <a href="@yield('lang_en', route('home.en'))" class="lang-btn active">EN</a>
         </div>
     </div>
 </header>

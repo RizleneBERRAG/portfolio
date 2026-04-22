@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Lettre de motivation')
+@section('lang_fr', route('motivation'))
+@section('lang_en', route('motivation.en'))
 
 @section('content')
     <section class="section">

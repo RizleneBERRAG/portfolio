@@ -1,6 +1,8 @@
 @php($profile = config('profile'))
 @extends('layouts.app')
 @section('title', 'Contact')
+@section('lang_fr', route('contact'))
+@section('lang_en', route('contact.en'))
 
 @section('content')
     <section class="section">
