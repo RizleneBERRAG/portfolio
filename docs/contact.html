@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="/portfolio/assets/css/style.css">
+    <script defer src="/portfolio/assets/js/app.js"></script>
+</head>
+<body class="site">
+<header class="header">
+    <div class="container header-inner">
+        <a href="http://127.0.0.1:8000" class="brand">
+            Rizlene Berrag<span>.</span>
+        </a>
+
+        <nav class="nav">
+            <a href="/portfolio/projects.html">Projets</a>
+            <a href="/portfolio/cv.html">CV</a>
+            <a href="/portfolio/motivation.html">Motivation</a>
+            <a href="/portfolio/contact.html">Contact</a>
+        </nav>
+
+        <div class="head-actions">
+            <a class="btn" href="/portfolio/assets/cv.pdf">CV PDF</a>
+            <a class="cta" href="/portfolio/contact.html">Me contacter</a>
+        </div>
+    </div>
+</header>
+
+<main class="main site-main">
+    <div class="container page-wrap">
+            <section class="section">
+        <div class="section-head">
+            <h1 class="h2">Contact</h1>
+        </div>
+
+        <div class="grid2">
+            <div class="card pad">
+                <h3 class="h3">CoordonnÃ©es</h3>
+                <ul class="list">
+                    <li><b>Email :</b> <a href="mailto:Berragrizlene1977@gmail.com">Berragrizlene1977@gmail.com</a></li>
+                    <li><b>LinkedIn :</b> <a href="https://www.linkedin.com/in/rizlene-berrag/" target="_blank" rel="noopener">https://www.linkedin.com/in/rizlene-berrag/</a></li>
+                    <li><b>GitHub :</b> <a href="https://github.com/RizleneBERRAG" target="_blank" rel="noopener">https://github.com/RizleneBERRAG</a></li>
+                </ul>
+
+                <div class="actions" style="margin-top:14px;">
+                    <a class="btn" href="/portfolio/assets/cv.pdf">TÃ©lÃ©charger le CV</a>
+                </div>
+            </div>
+
+            <div class="card pad">
+                <h3 class="h3">Envoyer un message</h3>
+
+                <form class="form" action="#" method="post" onsubmit="return fakeSubmit(event)">
+                    <label>
+                        <span>Nom</span>
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                    </label>
+
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="email@domaine.com" required>
+                    </label>
+
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" placeholder="Bonjour, ..." required></textarea>
+                    </label>
+
+                    <button class="btn primary" type="submit">Envoyer</button>
+                    <p id="formStatus" class="muted" style="margin:10px 0 0;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>Â© 2026 â€” Rizlene Berrag â€¢ Laravel / Blade</p>
+
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/rizlene-berrag/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/RizleneBERRAG" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:Berragrizlene1977@gmail.com">Email</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
